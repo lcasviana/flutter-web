@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug CanvasKit",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--web-renderer",
+        "canvaskit",
+        "--debug",
+        "--no-sound-null-safety",
+      ]
+    },
+    {
+      "name": "Debug HTML",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--web-renderer",
+        "html",
+        "--debug",
+        "--no-sound-null-safety",
+      ]
+    },
+    {
+      "name": "Release CanvasKit",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--web-renderer",
+        "canvaskit",
+        "--release",
+        "--no-sound-null-safety",
+      ]
+    },
+    {
+      "name": "Release HTML",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--web-renderer",
+        "html",
+        "--release",
+        "--no-sound-null-safety",
+      ]
+    },
+  ]
+}
