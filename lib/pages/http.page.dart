@@ -42,7 +42,7 @@ class _HttpPageState extends State<HttpPage> {
 
   void _getBlo() {
     _clear();
-    Future.delayed(const Duration(milliseconds: 500), () => _setResult('Bló'));
+    Future.delayed(Duration(milliseconds: 500), () => _setResult('Bló'));
   }
 
   Widget _actionButton(String title, Function function) {
@@ -68,14 +68,14 @@ class _HttpPageState extends State<HttpPage> {
                 _actionButton('Bló', _getBlo),
               ],
             ),
-            Text(_result, style: const TextStyle(fontSize: 28)),
+            Text(_result, style: TextStyle(fontSize: 28)),
             if (_todoModel != null)
               Column(
                 children: [
-                  Text(_todoModel!.userId.toString(), style: const TextStyle(fontSize: 16)),
-                  Text(_todoModel!.id.toString(), style: const TextStyle(fontSize: 16)),
-                  Text(_todoModel!.title.toString(), style: const TextStyle(fontSize: 16)),
-                  Text(_todoModel!.completed.toString(), style: const TextStyle(fontSize: 16)),
+                  Text(_todoModel!.userId.toString(), style: TextStyle(fontSize: 16)),
+                  Text(_todoModel!.id.toString(), style: TextStyle(fontSize: 16)),
+                  Text(_todoModel!.title.toString(), style: TextStyle(fontSize: 16)),
+                  Text(_todoModel!.completed.toString(), style: TextStyle(fontSize: 16)),
                 ],
               ),
           ],

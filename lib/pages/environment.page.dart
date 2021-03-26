@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_web/widgets/shell.widget.dart';
@@ -8,6 +10,18 @@ class EnvironmentPage extends StatefulWidget {
 }
 
 class _EnvironmentStatePage extends State<EnvironmentPage> {
+  @override
+  void initState() {
+    log('EnvironmentPage.initState()');
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    log('EnvironmentPage.dispose()');
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Shell(
